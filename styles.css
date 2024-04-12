@@ -43,7 +43,8 @@ margin-top:30px;
 
 input {
     width:500px;
-    border-radius:15px
+    border-radius:15px;
+    background-color:lightgray
 }
 
 #intro{
@@ -55,19 +56,22 @@ input {
 #buttons{
     grid-column:2/3;
     grid-row:2/3;
+    
 }
 
 
 button{
     height:50px;
     width:75px;
-    border-radius:25px
+    border-radius:25px;
+    background-color:lightblue
 }
 
 #main-content{
 grid-row:2/3;
 display:grid;
-grid-template-columns:3fr 1fr
+grid-template-columns:3fr 1fr;
+background-color: lightgray
 }
 
 #projects{
@@ -82,7 +86,9 @@ grid-template-columns:3fr 1fr
     border:solid 2px black;
     grid-row:span(1);
     grid-column:span(1);
-    padding:5px
+    padding:5px;
+    background-color:white;
+    border-radius:10px
 }
 
 #right-side{
@@ -101,7 +107,9 @@ margin-right:15px
 
 .announcement{
     border:1px solid black;
-    padding:5px
+    padding:5px;
+    background-color:white;
+    border-radius:10px
 }
 
 .announcement p{
@@ -110,7 +118,8 @@ margin-right:15px
 
 
 #trending-container{
-margin-right:15px
+margin-right:15px;
+
 }
 
 #trending{
@@ -118,5 +127,8 @@ margin-right:15px
 }
 
 .finished{
-    border:1px solid black
+    border:1px solid black;
+    background-color:white;
+    border-radius:10px;
+    padding:5px
 }
