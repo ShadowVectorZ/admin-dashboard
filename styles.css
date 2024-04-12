@@ -2,6 +2,7 @@
     display:grid;
     grid-template-columns:1fr 4fr;
     grid-template-rows:1fr 4fr;
+    margin:-8px
 }
 
 
@@ -10,8 +11,10 @@
     color:black;
     grid-column:1/2;
     grid-row:1/3;
-   
+}
 
+#dashboard h1{
+    margin-left:20px
 }
 
 #dashboard ul{
@@ -22,13 +25,13 @@
     list-style:none;
     grid-row:span(1);
 }
+
 #header{
     color:black;
-    /* background-color:grey; */
     grid-row:1/2;
     border:solid 2px black;
     display:grid;
-    grid-template: 1fr 1fr/2fr 1fr
+    grid-template: 1fr 1fr/2fr 1fr;
 }
 
 
@@ -36,7 +39,6 @@
 width:2fr;
 margin-left:50px;
 margin-top:30px;
-
 }
 
 input {
@@ -48,13 +50,11 @@ input {
     grid-row:2/3;
     grid-column:1/2;
     margin-left:50px
-
 }
 
 #buttons{
     grid-column:2/3;
     grid-row:2/3;
-    
 }
 
 
@@ -62,33 +62,61 @@ button{
     height:50px;
     width:75px;
     border-radius:25px
-
 }
 
 #main-content{
 grid-row:2/3;
 display:grid;
 grid-template-columns:3fr 1fr
-
 }
 
 #projects{
     grid-column:1/2;
     display:grid;
-    grid-template:1fr 1fr 1fr/  1fr 1fr
-
+    grid-template:2fr 2fr 2fr/  1fr 1fr;
+    margin:25px;
+    gap:15px
 }
 
 .project{
     border:solid 2px black;
-    height:200px;
-    width:300px
+    grid-row:span(1);
+    grid-column:span(1);
+    padding:5px
+}
+
+#right-side{
+    grid-column:2/3;
 }
 
 #announcements{
-grid-column:2/3;
+margin-top:-50px;
+margin-right:15px
+}
+
+#announcement-body p {
+    margin-top:-10px
+}
+
+
+.announcement{
+    border:1px solid black;
+    padding:5px
+}
+
+.announcement p{
+    margin-top:-20px
+}
+
+
+#trending-container{
+margin-right:15px
 }
 
 #trending{
-grid-column:2/3
+    margin-bottom:30px
+}
+
+.finished{
+    border:1px solid black
 }
